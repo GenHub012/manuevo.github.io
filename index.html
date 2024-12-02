@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  </head>
+  <body>
+    <!-- Main Section: Button to show portfolio -->
+    <div id="main-section">
+      <h1>Click Here</h1>
+      <h1>⬇️</h1>
+      <button id="show-portfolio-button">View Portfolio</button>
+    </div>
+
+    <div id="portfolio-section" style="display: none;" >
+      <!-- Desktop Navigation -->
+      <nav id="desktop-nav">
+        <div class="logo">Genesis Manuevo</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about" >About</a></li>
+            <li><a href="#experience" >Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Profile Section -->
+      <section id="profile" class="animate__animated animate__fadeInLeft animate__duration-3s animate__delay-1s">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Profile Picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 id="name-placeholder" class="title">[Name]</h1> <!-- Placeholder for Name -->
+          <p id="title-placeholder" class="section__text__p2">[Title]</p> <!-- Placeholder for Title -->
+          <div id="socials-container">
+            <a href="https://www.facebook.com/share/18Bm3gqTsM/?mibextid=LQQJ4d" target="_blank">
+              <img src="./assets/facebook.png" alt="Facebook" class="icon" />
+            </a>
+            <a href="https://github.com/GenHub012" target="_blank">
+              <img src="./assets/github.png" alt="GitHub" class="icon" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="animate__animated animate__fadeInLeft animate__duration-4s animate__delay-3s">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img src="./assets/profile.jpg" alt="About Me" class="about-pic" />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="./assets/experience.png" alt="Experience Icon" class="icon" />
+                <h3>Experience</h3>
+                <p id="experience-placeholder">[Experience Info]</p> <!-- Placeholder for Experience -->
+              </div>
+              <div class="details-container">
+                <img src="./assets/education.png" alt="Education Icon" class="icon" />
+                <h3>Education</h3>
+                <p id="education-placeholder">[Education Info]</p> <!-- Placeholder for Education -->
+              </div>
+            </div>
+            <div class="text-container">
+              <p id="bio-placeholder">[Personal Bio]</p> <!-- Placeholder for Bio -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="animate__animated animate__fadeInLeft animate__duration-5s animate__delay-4s">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container" id="skills-container"> <!-- Placeholder for Skills -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
+            <p><a href="mailto:g.manuevo1@gmail.com">g.manuevo1@gmail.com</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#profile">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Developed By Genesis Lloyd L. Manuevo</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>    
